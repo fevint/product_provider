@@ -52,6 +52,9 @@ class ItemProductWidget extends StatelessWidget {
                 fontSize: 16,
               ),
             ),
+            const SizedBox(
+              height: 5,
+            ),
             Row(
               children: [
                 Container(
