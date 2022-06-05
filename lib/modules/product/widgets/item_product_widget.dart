@@ -66,7 +66,7 @@ class ItemProductWidget extends StatelessWidget {
                   child: Text(
                     ("${product.discountPercentage.toInt()}%"),
                     style: const TextStyle(
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
