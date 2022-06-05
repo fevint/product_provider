@@ -35,7 +35,7 @@ class ItemProductWidget extends StatelessWidget {
             Text(
               product.brand,
               style: GoogleFonts.poppins(
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -49,7 +49,7 @@ class ItemProductWidget extends StatelessWidget {
                       product.price * product.discountPercentage / 100),
               style: const TextStyle(
                 fontWeight: FontWeight.w800,
-                fontSize: 16,
+                fontSize: 17,
               ),
             ),
             const SizedBox(
@@ -71,7 +71,7 @@ class ItemProductWidget extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 5,
+                  width: 10,
                 ),
                 Text(
                   "\$ ${product.price}",
@@ -114,8 +114,8 @@ class ItemProductWidget extends StatelessWidget {
                     ),
                     child: const Center(
                       child: Icon(
-                        Icons.favorite,
-                        color: Colors.red,
+                        Icons.favorite_outline,
+                        color: Colors.grey,
                         size: 15,
                       ),
                     ),
