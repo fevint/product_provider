@@ -42,6 +42,16 @@ class ItemProductWidget extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
+            Text(
+              NumberFormat.currency(
+                      locale: 'en', symbol: '\$ ', decimalDigits: 0)
+                  .format(product.price -
+                      product.price * product.discountPercentage / 100),
+              style: const TextStyle(
+                fontWeight: FontWeight.w800,
+                fontSize: 16,
+              ),
+            ),
             Row(
               children: [
                 Container(
@@ -72,16 +82,6 @@ class ItemProductWidget extends StatelessWidget {
             ),
             const SizedBox(
               height: 5,
-            ),
-            Text(
-              NumberFormat.currency(
-                      locale: 'en', symbol: '\$ ', decimalDigits: 0)
-                  .format(product.price -
-                      product.price * product.discountPercentage / 100),
-              style: const TextStyle(
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-              ),
             ),
             Container(
               margin: const EdgeInsets.only(
